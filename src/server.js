@@ -1,3 +1,5 @@
-import app from './app.js'
+import app from './app'
 
-app.listen(4000)
+const port = 4000
+
+app.listen(port)
