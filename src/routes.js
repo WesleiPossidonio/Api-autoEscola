@@ -5,9 +5,6 @@ import SessionController from './app/controlles/SessionController'
 import authMiddlewares from './app/middlewares/auth'
 import CreateStudentForTestController from './app/controlles/CreateStudentForTestController'
 
-
-
-
 const routes = new Router()
 
 routes.post('/users', UserController.store)
