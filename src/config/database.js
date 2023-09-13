@@ -1,22 +1,21 @@
+module.exports = {
+  dialect: 'postgres',
+  host: process.env.HOST,
+  username: process.env.USERNAME,
+  password: process.env.PASSWORD,
+  database: process.env.DATABASE,
+  define: {
+    timespamps: true,
+    underscored: true,
+  },
+}
+
 // module.exports = {
 //   dialect: 'postgres',
-//   host: 'silly.db.elephantsql.com',
-//   username: 'kthljhxs',
-//   password: 'ER-26CHhV04fOYqmuWqSFBMLj1J_v9ES',
-//   database: 'autoescola-postgres',
+//   url: process.env.URLDATABASE,
 //   define: {
-//     timespamps: true,
+//     timestamps: true,
 //     underscored: true,
 //     underscoredAll: true,
 //   },
-// }
-
-module.exports = {
-  dialect: 'postgres',
-  url: process.env.URLDATABASE,
-  define: {
-    timestamps: true,
-    underscored: true,
-    underscoredAll: true,
-  },
-};
+// };
