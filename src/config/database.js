@@ -1,5 +1,8 @@
+import * as pg from 'pg';
+
 export default {
   dialect: 'postgres',
+  dialectModule: pg, 
   host: process.env.HOST,
   username: process.env.USERNAME,
   password: process.env.PASSWORD,
