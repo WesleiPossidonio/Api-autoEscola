@@ -1,9 +1,9 @@
 import Sequelize from 'sequelize'
 
-import User from '../app/models/User.js'
+import User from '../app/models/User'
 
-import configDatabase from '../config/database.js'
-import CreatedFormTest from '../app/models/CreatedFormTest.js'
+import configDatabase from '../config/database'
+import CreatedFormTest from '../app/models/CreatedFormTest'
 
 const models = [User, CreatedFormTest]
 class Database {

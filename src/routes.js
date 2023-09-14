@@ -1,9 +1,9 @@
 import { Router } from 'express'
-import UserController from './app/controlles/UserController.js'
-import SessionController from './app/controlles/SessionController.js'
+import UserController from './app/controlles/UserController'
+import SessionController from './app/controlles/SessionController'
 
-import authMiddlewares from './app/middlewares/auth.js'
-import CreateStudentForTestController from './app/controlles/CreateStudentForTestController.js'
+import authMiddlewares from './app/middlewares/auth'
+import CreateStudentForTestController from './app/controlles/CreateStudentForTestController'
 
 const routes = new Router()
 

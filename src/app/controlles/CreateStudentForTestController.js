@@ -1,5 +1,5 @@
 import * as Yup from 'yup'
-import CreatedFormTest from '../models/CreatedFormTest.js'
+import CreatedFormTest from '../models/CreatedFormTest'
 class CreateStudentForTest {
   async store(request, response) {
     const schema = Yup.object().shape({
