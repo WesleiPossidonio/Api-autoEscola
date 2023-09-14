@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   dialect: 'postgres',
   host: process.env.HOST,
   username: process.env.USERNAME,
@@ -8,7 +8,19 @@ module.exports = {
     timespamps: true,
     underscored: true,
   },
-}
+};
+
+// module.exports = {
+//   dialect: 'postgres',
+//   host: process.env.HOST,
+//   username: process.env.USERNAME,
+//   password: process.env.PASSWORD,
+//   database: process.env.DATABASE,
+//   define: {
+//     timespamps: true,
+//     underscored: true,
+//   },
+// }
 
 // module.exports = {
 //   dialect: 'postgres',
