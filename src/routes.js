@@ -7,11 +7,13 @@ import CreateStudentForTestController from './app/controlles/CreateStudentForTes
 
 const routes = new Router()
 
-routes.post('/users', UserController.store)
+
 routes.patch('/update-password', UserController.update)
 routes.post('/sessions', SessionController.store)
 
 routes.use(authMiddlewares)
+routes.post('/users', UserController.store)
+routes.get('/getUsers', UserController.index)
 
 routes.get('/students', CreateStudentForTestController.index)
 routes.post('/createStudent', CreateStudentForTestController.store)

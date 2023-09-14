@@ -76,6 +76,16 @@ class UserController {
 
     return response.status(200).json()
   }
+
+  async index(request, response) {
+    try {
+      const userData = await User.findAll()
+      response.status(200).json(userData)
+    } catch (error) {
+      console.log(error)
+      response.status(500).send('Internal server error')
+    }
+  }
 }
 
 export default new UserController()
