@@ -12,6 +12,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "16.20.2" 
+  },
   "devDependencies": {
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^9.0.0",
