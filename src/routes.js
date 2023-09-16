@@ -8,7 +8,7 @@ import CreateStudentForTestController from './app/controlles/CreateStudentForTes
 const routes = new Router()
 
 
-routes.patch('/update-password', UserController.update)
+routes.put('/update-password', UserController.update)
 routes.post('/sessions', SessionController.store)
 
 routes.use(authMiddlewares)
