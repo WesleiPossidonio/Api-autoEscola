@@ -12,7 +12,7 @@ routes.put('/update-password', UserController.update)
 routes.post('/sessions', SessionController.store)
 
 routes.use(authMiddlewares)
-
+routes.post('/users', UserController.store)
 routes.get('/getUsers', UserController.index)
 
 routes.get('/students', CreateStudentForTestController.index)
